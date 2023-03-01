@@ -3,7 +3,7 @@ package initializers
 
 import (
 	"log"
-	"github.comjoho/godotenv"
+	"github.com/joho/godotenv"
 )
 func LoadEnvVariables() {
 

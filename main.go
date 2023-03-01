@@ -1,15 +1,11 @@
 package main
 import ( 
 "github.com/gin-gonic/gin"
-"log"
-"github.com/joho/godotenv"
+"github.com/trey-rustand/golang-crud/initalizers"
 )
 func init(){
-	err := godotenv.Load()
-	
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}}
+	initializers.LoadEnvVariables()
+}
 func main() {
 	r := gin.Default()
 
